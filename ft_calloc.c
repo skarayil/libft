@@ -6,21 +6,22 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 15:35:03 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 15:57:54 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/02 19:07:37 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 void	*calloc(size_t nmemb, size_t size)
 {
 	size_t	total;
-	size_t	*buff;
+	size_t	*dup;
 
-	buff = nmemb * size;
-	buff = malloc(total);
-	if (!buff)
+	total = nmemb * size;
+	dup = malloc(total);
+	if (!dup)
 		return (NULL);
-	ft_memset(buff, '\0', total);
-	return (buff);
+	ft_memset(dup, 0, total);
+	return (dup);
 }

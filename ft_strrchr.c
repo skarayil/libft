@@ -6,31 +6,22 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:21:59 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 18:59:17 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/02 18:43:24 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*p;
-	int		i;
-	int		last;
+	char	*last;
 
-	p = (char *)s;
-	i = 0;
-	last = -1;
-	if ((unsigned char)c == 0)
-		return (p + ft_strlen(p));
-	while (s[i] != '\0')
+	last = 0;
+	while (*s)
 	{
-		if (s[i] == (unsigned char)c)
-		{
-			last = i;
-		}
-		i++;
+		if (*s == (char)c)
+			last = (char *)s;
+		s++;
 	}
-	if (last != -1)
-		return (p + last);
-	else
-		return (0);
+	if (c == '\0')
+		return ((char *)s);
+	return (last);
 }

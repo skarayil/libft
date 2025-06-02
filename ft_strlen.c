@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:16:20 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 18:53:39 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/02 18:26:44 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	size_t	index;
 
-	i = 0;
+	index = 0;
 	while (*s++)
-		i++;
-	return (i);
+		index++;
+	return (index);
 }

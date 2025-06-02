@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:26:19 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 15:48:00 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/05/31 15:52:02 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ int	ft_atoi(const char *nptr)
 	}
 	while (ft_isdigit(*nptr))
 	{
-		res = res * 10;
-		res = res + (*nptr - 48);
+		res = (res * 10) + (*nptr - 48);
 		nptr++;
 	}
 	return (sign * res);

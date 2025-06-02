@@ -6,11 +6,9 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:15:05 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 12:42:32 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/05/30 15:44:55 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {

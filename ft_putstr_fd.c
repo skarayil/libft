@@ -6,8 +6,16 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 19:09:59 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 19:10:08 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/05/30 19:26:36 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putstr_fd(char *s, int fd)
+#include <unistd.h>
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	if (!s)
+		return ;
+	while (*s)
+		write(fd, s++, 1);
+}

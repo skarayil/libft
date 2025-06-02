@@ -6,8 +6,13 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 19:07:58 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 19:08:07 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/05/31 16:16:38 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar_fd(char c, int fd)
+#include <unistd.h>
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}

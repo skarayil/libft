@@ -6,30 +6,30 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:21:37 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 15:11:12 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/05/31 12:30:28 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *s, int c)
 {
-	char	*p;
-	int		to_find;
+	char	*ptr;
+	int		find;
 
-	to_find = 0;
-	p = (char *)s;
-	if (*p == (unsigned char)c)
-		to_find = 1;
+	find = 0;
+	ptr = (char *)s;
+	if (*ptr == (unsigned char)c)
+		find = 1;
 	else
 	{
-		while (*p != (unsigned char)c && *p != '\0')
+		while (*ptr != (unsigned char)c && *ptr != '\0')
 		{
-			p++;
-			if (*p == (unsigned char)c)
-				to_find = 1;
+			ptr++;
+			if (*ptr == (unsigned char)c)
+				find = 1;
 		}
 	}
-	if (to_find == 1)
-		return (p);
+	if (find == 1)
+		return (ptr);
 	else
 		return (0);
 }

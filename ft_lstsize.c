@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 14:51:28 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/03 15:34:09 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/03 16:22:11 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 
 	index = 1;
 	if (!lst)
-		return (NULL);
+		return (0);
 	while (lst->next)
 	{
 		lst = lst->next;

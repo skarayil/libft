@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 14:12:56 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/03 14:50:59 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/03 16:20:20 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!new)
-		return (NULL);
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

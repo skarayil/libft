@@ -6,7 +6,7 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 19:04:58 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/02 18:30:43 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/04 16:02:54 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,22 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char const	*strt;
-	char const	*fnsh;
-	char		*mem;
-	size_t		size;
+	size_t	j;
+	char	*str;
+	size_t	i;
 
-	if (!s1 || !set)
-		return (NULL);
-	strt = s1;
-	while (*strt && ft_strchr(set, *strt))
-		strt++;
-	fnsh = s1 + ft_strlen(s1) - 1;
-	while (*fnsh && ft_strchr(set, *fnsh))
-		fnsh--;
-	size = fnsh - strt + 1;
-	mem = (char *)malloc((size + 1) * sizeof(char));
-	if (!mem)
-		return (NULL);
-	ft_strlcpy(mem, strt, size + 1);
-	mem[size] = '\0';
-	return (mem);
+	str = 0;
+	if (s1 != 0 && set != 0)
+	{
+		i = 0;
+		j = ft_strlen(s1);
+		while (s1[i] && ft_strchr(set, s1[i]))
+			i++;
+		while (s1[j - 1] && ft_strchr(set, s1[j - 1]) && j > i)
+			j--;
+		str = (char *)malloc(sizeof(char) * (j - i + 1));
+		if (str)
+			ft_strlcpy(str, &s1[i], j - i + 1);
+	}
+	return (str);
 }

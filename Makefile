@@ -35,29 +35,35 @@ ft_strrchr.c \
 ft_strtrim.c \
 ft_substr.c \
 ft_tolower.c \
-ft_toupper.c \
-ft_lstadd_back.c \
+ft_toupper.c
+
+SRCSB = ft_lstnew.c \
 ft_lstadd_front.c \
-ft_lstclear.c \
-ft_lstdelone.c \
-ft_lstiter.c \
-ft_lstlast.c \
-ft_lstmap.c \
-ft_lstnew.c \
 ft_lstsize.c \
+ft_lstlast.c \
+ft_lstadd_back.c \
+ft_lstdelone.c \
+ft_lstclear.c \
+ft_lstiter.c \
+ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
+
+OBJSB = $(SRCSB:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+bonus : $(NAME) $(OBJSB)
+	ar rcs $(NAME) $(OBJSB)
+
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJS) $(OBJSB)
 
 fclean: clean
-	rm -rf $(NAME)
+	rm -rf $(NAME) $(bonus)
 
 re: fclean all
 

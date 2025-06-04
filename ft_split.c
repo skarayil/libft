@@ -6,78 +6,70 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 19:05:29 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/02 19:15:22 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/04 15:26:56 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
-static void	ft_free(char **s, int i)
+static char	**malloc_error(char **arr, size_t i)
 {
-	if (!s)
-		return ;
-	while (s[i])
+	while (arr[i])
+		free(arr[i++]);
+	return (free(arr), NULL);
+}
+
+static int	word_count(char const *s, char c)
+{
+	size_t	i;
+
+	i = 0;
+	while (*s)
 	{
-		free(s[i]);
-		i++;
+		if (*s == c)
+			s++;
+		else
+		{
+			while (*s && *s != c)
+				s++;
+			i++;
+		}
 	}
-	free(s);
+	return (i);
 }
 
-static int	ft_word_len(char const *s, char c)
+static int	word_len(char const *s, char c)
 {
-	unsigned int	index;
+	int	len;
 
-	index = 0;
-	while (s[index] && s[index] != c)
-		index++;
-	return (index);
-}
-
-static unsigned int	ft_str_len(char const *s, char c)
-{
-	unsigned int	index;
-	unsigned int	count;
-
-	index = 0;
-	count = 0;
-	if (!s[index])
+	len = 0;
+	if (!*s)
 		return (0);
-	while (s[index])
-	{
-		if ((s[index] != c && s[index + 1] == c)
-			|| (s[index] != c && s[index + 1] == '\0'))
-			count++;
-		index++;
-	}
-	return (count);
+	while (*s && *s++ != c)
+		len++;
+	return (len);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**str;
+	char	**res;
+	int		a;
 	int		i;
-	int		j;
 
-	str = (char **)malloc(sizeof(char *) * (ft_str_len(s, c) + 1));
-	if (!str)
+	a = -1;
+	i = 0;
+	res = (char **)malloc(sizeof(char *) * (word_count(s, c) + 1));
+	if (!s || !res)
 		return (NULL);
-	i = -1;
-	while (*s)
+	while (++a < word_count(s, c))
 	{
-		while (*s && *s == c)
-			s++;
-		if (*s)
-		{
-			str[++i] = (char *)malloc(sizeof(char) * (ft_word_len(s, c) + 1));
-			if (!str[i])
-				ft_free(str, i);
-			j = 0;
-			while (*s && *s != c)
-				str[i][j++] = *s++;
-			str[i][j++] = '\0';
-		}
+		while (s[i] && s[i] == c)
+			i++;
+		res[a] = ft_substr(s, i, word_len(&s[i], c));
+		if (!res[a])
+			return (malloc_error(res, 0));
+		i += word_len(&s[i], c);
 	}
-	str[++i] = '\0';
-	return (str);
+	return (res[a] = NULL, res);
 }

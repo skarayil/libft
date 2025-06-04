@@ -6,33 +6,28 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:22:24 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 18:59:12 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/04 12:33:40 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *str, const char *to_find, size_t len)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
-	size_t	j;
+	size_t	index;
 
-	i = 0;
-	if (!*to_find)
-		return ((char *)str);
-	if (len == 0)
-		return (0);
-	while (str[i] != '\0' && i < len)
+	index = 0;
+	while (index < n)
 	{
-		j = 0;
-		while ((str[i + j] == to_find[j]) && (to_find[j] != '\0') && ((i
-					+ j) < len))
+		if (s1[index] != s2[index])
 		{
-			if (to_find[j + 1] == '\0')
-				return ((char *)str + i);
-			j++;
+			return ((unsigned char)s1[index] - (unsigned char)s2[index]);
 		}
-		i++;
+		if (s1[index] == '\0' || s2[index] == '\0')
+		{
+			break ;
+		}
+		index++;
 	}
 	return (0);
 }

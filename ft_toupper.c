@@ -6,13 +6,13 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 12:18:28 by skarayil          #+#    #+#             */
-/*   Updated: 2025/05/28 18:59:22 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/04 12:24:13 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+int	ft_toupper(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
 	return (c);
 }

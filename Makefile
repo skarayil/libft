@@ -56,6 +56,9 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ 
+
 bonus : $(NAME) $(OBJSB)
 	ar rcs $(NAME) $(OBJSB)
 
@@ -67,4 +70,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus

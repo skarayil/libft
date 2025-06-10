@@ -6,14 +6,14 @@
 /*   By: skarayil <skarayil@student.42kocaeli>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 19:05:29 by skarayil          #+#    #+#             */
-/*   Updated: 2025/06/04 15:26:56 by skarayil         ###   ########.fr       */
+/*   Updated: 2025/06/10 13:33:25 by skarayil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-static char	**malloc_error(char **arr, size_t i)
+static char	**malloc_free(char **arr, size_t i)
 {
 	while (arr[i])
 		free(arr[i++]);
@@ -53,23 +53,23 @@ static int	word_len(char const *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char	**res;
-	int		a;
+	char	**split;
+	int		j;
 	int		i;
 
-	a = -1;
+	j = -1;
 	i = 0;
-	res = (char **)malloc(sizeof(char *) * (word_count(s, c) + 1));
-	if (!s || !res)
+	split = (char **)malloc(sizeof(char *) * (word_count(s, c) + 1));
+	if (!s || !split)
 		return (NULL);
-	while (++a < word_count(s, c))
+	while (++j < word_count(s, c))
 	{
 		while (s[i] && s[i] == c)
 			i++;
-		res[a] = ft_substr(s, i, word_len(&s[i], c));
-		if (!res[a])
-			return (malloc_error(res, 0));
+		split[j] = ft_substr(s, i, word_len(&s[i], c));
+		if (!split[j])
+			return (malloc_free(split, 0));
 		i += word_len(&s[i], c);
 	}
-	return (res[a] = NULL, res);
+	return (split[j] = NULL, split);
 }

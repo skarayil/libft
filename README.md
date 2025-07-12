@@ -1,23 +1,22 @@
-#  Libft: Kendime Özel C Kütüphanesi
+# libft - C Fonksiyonları Kütüphanesi
 
 Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiyonlarımı içeren kişisel bir kütüphane olan Libft'yi oluşturmayı amaçlamaktadır. Bu kütüphane, 42 Okulu'nun öğrenme metodolojisi doğrultusunda, C dilinin temellerini, standart kütüphanelerin iç işleyişini anlamaya ve kendi özgün çözümlerimi geliştirmeye odaklanmıştır.
 
-# Proje Yapısı
-Libft kütüphanesi aşağıdaki temel dosya ve dizin yapısına sahiptir:
+## Proje Yapısı
 
-**libft.h:** Kütüphanede bulunan tüm fonksiyonların prototiplerini içeren başlık dosyası.
+*  **libft.h:** Kütüphanede bulunan tüm fonksiyonların prototiplerini içeren başlık dosyası.
 
-**Makefile:** Kütüphaneyi derlemek ve proje dosyalarını temizlemek için kullanılan makefile dosyası.
+*  **Makefile:** Kütüphaneyi derlemek ve proje dosyalarını temizlemek için kullanılan makefile dosyası.
 
-**src/:** Kütüphanenin tüm .c kaynak dosyalarını içeren dizin. Her fonksiyonun ayrı bir .c dosyası bulunur, bu da modülerliği ve okunabilirliği artırır.
+*  **src/:** Kütüphanenin tüm .c kaynak dosyalarını içeren dizin. Her fonksiyonun ayrı bir .c dosyası bulunur, bu da modülerliği ve okunabilirliği artırır.
 
-**Fonksiyonlar**
+*  **Fonksiyonlar**
 Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon setini içermektedir:
 
 **İşaretçi ve Bellek Yönetimi Fonksiyonları**
 Bu fonksiyonlar, bellekle doğrudan etkileşim kurarak veri depolama ve manipülasyonu için kullanılır.
 
-**ft_memset:** Belirli bir bellek bloğunu, belirtilen bir değerle doldurur. Genellikle bir belleği başlatmak veya sıfırlamak için kullanılır.
+*   `ft_memset`: Belirli bir bellek bloğunu, belirtilen bir değerle doldurur. Genellikle bir belleği başlatmak veya sıfırlamak için kullanılır.
 
 **ft_bzero:** Belirli bir bellek bloğunu tamamen sıfırlarla doldurur. ft_memset(ptr, 0, size) ile benzer bir işlevi vardır.
 

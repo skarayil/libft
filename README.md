@@ -1,8 +1,8 @@
-**Libft: Kendime Özel C Kütüphanesi**
+#  Libft: Kendime Özel C Kütüphanesi
 
 Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiyonlarımı içeren kişisel bir kütüphane olan Libft'yi oluşturmayı amaçlamaktadır. Bu kütüphane, 42 Okulu'nun öğrenme metodolojisi doğrultusunda, C dilinin temellerini, standart kütüphanelerin iç işleyişini anlamaya ve kendi özgün çözümlerimi geliştirmeye odaklanmıştır.
 
-**Proje Yapısı**
+# Proje Yapısı
 Libft kütüphanesi aşağıdaki temel dosya ve dizin yapısına sahiptir:
 
 **libft.h:** Kütüphanede bulunan tüm fonksiyonların prototiplerini içeren başlık dosyası.
@@ -112,6 +112,9 @@ Bu fonksiyonlar, dinamik veri yapıları olan tek yönlü bağlı listeleri yön
 **ft_lstdelone:** Belirli bir liste elemanını (node) ve içerdiği hafızayı silerek serbest bırakır.
 
 **ft_lstclear:** Belirtilen bir bağlı listenin tüm elemanlarını (node'larını) ve bu elemanların içerdiği hafızayı silerek serbest bırakır. Listenin tamamını boşaltır.
+
+---
+### Created by Sude Naz Karayıldırım
 
 **ft_lstiter:** Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular. Bu fonksiyon genellikle elemanların içeriği üzerinde bir işlem yapmak için kullanılır.
 

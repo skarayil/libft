@@ -13,28 +13,28 @@ Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiy
 *  **Fonksiyonlar**
 Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon setini içermektedir:
 
-* *  **İşaretçi ve Bellek Yönetimi Fonksiyonları**
+# **İşaretçi ve Bellek Yönetimi Fonksiyonları**
 Bu fonksiyonlar, bellekle doğrudan etkileşim kurarak veri depolama ve manipülasyonu için kullanılır.
 
 *   `ft_memset`: Belirli bir bellek bloğunu, belirtilen bir değerle doldurur. Genellikle bir belleği başlatmak veya sıfırlamak için kullanılır.
 
-**ft_bzero:** Belirli bir bellek bloğunu tamamen sıfırlarla doldurur. ft_memset(ptr, 0, size) ile benzer bir işlevi vardır.
+*  `ft_bzero`: Belirli bir bellek bloğunu tamamen sıfırlarla doldurur. ft_memset(ptr, 0, size) ile benzer bir işlevi vardır.
 
-**ft_memcpy:** Bir kaynak bellek bloğundaki veriyi, belirtilen hedef bellek bloğuna kopyalar. Kaynak ve hedef bellek bölgeleri çakışmıyorsa güvenle kullanılır.
+*  `ft_memcpy`: Bir kaynak bellek bloğundaki veriyi, belirtilen hedef bellek bloğuna kopyalar. Kaynak ve hedef bellek bölgeleri çakışmıyorsa güvenle kullanılır.
 
-**ft_memccpy:** Kaynak bellek bloğundan hedef bellek bloğuna veri kopyalar. Kopyalama işlemi, belirli bir karakterle karşılaşana kadar veya belirtilen boyut kadar devam eder.
+*  `ft_memcpy`: Kaynak bellek bloğundan hedef bellek bloğuna veri kopyalar. Kopyalama işlemi, belirli bir karakterle karşılaşana kadar veya belirtilen boyut kadar devam eder.
 
-**ft_memmove:** Bir kaynak bellek bloğundaki veriyi, belirtilen hedef bellek bloğuna kopyalar. ft_memcpy'den farklı olarak, kaynak ve hedef bellek bölgeleri çakışsa bile güvenli bir şekilde çalışır.
+*  `ft_memmove`: Bir kaynak bellek bloğundaki veriyi, belirtilen hedef bellek bloğuna kopyalar. ft_memcpy'den farklı olarak, kaynak ve hedef bellek bölgeleri çakışsa bile güvenli bir şekilde çalışır.
 
-**ft_memchr:** Belirli bir bellek bloğunun içinde, verilen bir karakteri arar ve bu karakterin ilk geçtiği yere bir işaretçi döndürür.
+*  `ft_memchr`: Belirli bir bellek bloğunun içinde, verilen bir karakteri arar ve bu karakterin ilk geçtiği yere bir işaretçi döndürür.
 
-**ft_memcmp:** İki bellek bloğunu byte byte karşılaştırır ve aralarındaki farkı (ilk farklı byte'ın değer farkını) döndürür. Eşitlerse 0 döner.
+*  `ft_memcmp`: İki bellek bloğunu byte byte karşılaştırır ve aralarındaki farkı (ilk farklı byte'ın değer farkını) döndürür. Eşitlerse 0 döner.
 
-**ft_calloc:** Belirtilen sayıda ve boyutta bellek tahsis eder ve tahsis edilen tüm belleği sıfırlarla doldurur. Genellikle diziler için kullanılır.
+*  `ft_calloc`: Belirtilen sayıda ve boyutta bellek tahsis eder ve tahsis edilen tüm belleği sıfırlarla doldurur. Genellikle diziler için kullanılır.
 
-**ft_strdup:** Verilen bir dizenin (string) tam bir kopyasını oluşturur ve bu yeni kopyanın başlangıcına bir işaretçi döndürür. Yeni bellek alanı malloc ile tahsis edilir.
+*  `ft_strdup`: Verilen bir dizenin (string) tam bir kopyasını oluşturur ve bu yeni kopyanın başlangıcına bir işaretçi döndürür. Yeni bellek alanı malloc ile tahsis edilir.
 
-**Karakter Kontrol ve Dönüşüm Fonksiyonları**
+# **Karakter Kontrol ve Dönüşüm Fonksiyonları**
 Bu fonksiyonlar, tek bir karakterin özelliklerini kontrol etmek veya karakterler arasında dönüşüm yapmak için kullanılır.
 
 **ft_isalpha:** Verilen karakterin alfabetik (A-Z veya a-z) olup olmadığını kontrol eder.
@@ -51,7 +51,7 @@ Bu fonksiyonlar, tek bir karakterin özelliklerini kontrol etmek veya karakterle
 
 **ft_tolower:** Verilen karakteri küçük harfe dönüştürür. Eğer zaten küçük harfse veya alfabetik değilse karakteri değiştirmez.
 
-**Dize İşleme Fonksiyonları**
+# **Dize İşleme Fonksiyonları**
 Bu fonksiyonlar, dizeler (null ile sonlanan karakter dizileri) üzerinde çeşitli manipülasyonlar yapmak için kullanılır.
 
 **ft_strlen:** Verilen bir dizenin uzunluğunu (null karakter hariç) hesaplar ve döndürür.
@@ -84,7 +84,7 @@ Bu fonksiyonlar, dizeler (null ile sonlanan karakter dizileri) üzerinde çeşit
 
 **ft_striteri:** Bir dizenin her karakterine, verilen bir fonksiyonu uygular. Bu fonksiyon, dizeyi yerinde değiştirir ve herhangi bir değer döndürmez.
 
-**Standart Girdi/Çıktı Fonksiyonları**
+# **Standart Girdi/Çıktı Fonksiyonları**
 Bu fonksiyonlar, veriyi belirtilen dosya tanımlayıcılarına (ekran, dosya vb.) yazmak için kullanılır.
 
 **ft_putchar_fd:** Tek bir karakteri, belirtilen dosya tanımlayıcısına yazar.
@@ -95,7 +95,7 @@ Bu fonksiyonlar, veriyi belirtilen dosya tanımlayıcılarına (ekran, dosya vb.
 
 **ft_putnbr_fd:** Bir tam sayıyı, belirtilen dosya tanımlayıcısına (dize olarak) yazar.
 
-**Bağlı Liste Fonksiyonları (Bonus Kısım)**
+# **Bağlı Liste Fonksiyonları (Bonus Kısım)**
 Bu fonksiyonlar, dinamik veri yapıları olan tek yönlü bağlı listeleri yönetmek için kullanılır.
 
 **ft_lstnew:** Belirtilen içeriğe sahip yeni bir bağlı liste elemanı (node) oluşturur ve bu elemanın işaretçisini döndürür.
@@ -112,9 +112,9 @@ Bu fonksiyonlar, dinamik veri yapıları olan tek yönlü bağlı listeleri yön
 
 **ft_lstclear:** Belirtilen bir bağlı listenin tüm elemanlarını (node'larını) ve bu elemanların içerdiği hafızayı silerek serbest bırakır. Listenin tamamını boşaltır.
 
----
-### Created by Sude Naz Karayıldırım
-
 **ft_lstiter:** Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular. Bu fonksiyon genellikle elemanların içeriği üzerinde bir işlem yapmak için kullanılır.
 
 **ft_lstmap:** Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular ve bu fonksiyonun döndürdüğü değerlerle yeni bir bağlı liste oluşturur. Yeni liste için bellek tahsis edilir.
+
+---
+### Created by Sude Naz Karayıldırım

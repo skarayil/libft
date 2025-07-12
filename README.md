@@ -10,7 +10,7 @@ Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiy
 
 *  **src/:** Kütüphanenin tüm .c kaynak dosyalarını içeren dizin. Her fonksiyonun ayrı bir .c dosyası bulunur, bu da modülerliği ve okunabilirliği artırır.
 
-*  **Fonksiyonlar**
+*  **Fonksiyonlar:**
 Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon setini içermektedir:
 
 # **İşaretçi ve Bellek Yönetimi Fonksiyonları**
@@ -37,19 +37,19 @@ Bu fonksiyonlar, bellekle doğrudan etkileşim kurarak veri depolama ve manipül
 # **Karakter Kontrol ve Dönüşüm Fonksiyonları**
 Bu fonksiyonlar, tek bir karakterin özelliklerini kontrol etmek veya karakterler arasında dönüşüm yapmak için kullanılır.
 
-**ft_isalpha:** Verilen karakterin alfabetik (A-Z veya a-z) olup olmadığını kontrol eder.
+*  `ft_isalpha`: Verilen karakterin alfabetik (A-Z veya a-z) olup olmadığını kontrol eder.
 
-**ft_isdigit:** Verilen karakterin rakam (0-9) olup olmadığını kontrol eder.
+*  `ft_isdigit`: Verilen karakterin rakam (0-9) olup olmadığını kontrol eder.
 
-**ft_isalnum:** Verilen karakterin alfabetik veya rakam olup olmadığını kontrol eder.
+*  `ft_isalnum`: Verilen karakterin alfabetik veya rakam olup olmadığını kontrol eder.
 
-**ft_isascii:** Verilen karakterin ASCII karakter kümesinde (0-127 arası) olup olmadığını kontrol eder.
+*  `ft_isascii`: Verilen karakterin ASCII karakter kümesinde (0-127 arası) olup olmadığını kontrol eder.
 
-**ft_isprint:** Verilen karakterin yazdırılabilir (boşluk dahil) olup olmadığını kontrol eder.
+*  `ft_isprint`: Verilen karakterin yazdırılabilir (boşluk dahil) olup olmadığını kontrol eder.
 
-**ft_toupper:** Verilen karakteri büyük harfe dönüştürür. Eğer zaten büyük harfse veya alfabetik değilse karakteri değiştirmez.
+*  `ft_toupper`: Verilen karakteri büyük harfe dönüştürür. Eğer zaten büyük harfse veya alfabetik değilse karakteri değiştirmez.
 
-**ft_tolower:** Verilen karakteri küçük harfe dönüştürür. Eğer zaten küçük harfse veya alfabetik değilse karakteri değiştirmez.
+*  `ft_tolower`: Verilen karakteri küçük harfe dönüştürür. Eğer zaten küçük harfse veya alfabetik değilse karakteri değiştirmez.
 
 # **Dize İşleme Fonksiyonları**
 Bu fonksiyonlar, dizeler (null ile sonlanan karakter dizileri) üzerinde çeşitli manipülasyonlar yapmak için kullanılır.

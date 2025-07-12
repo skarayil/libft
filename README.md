@@ -13,7 +13,7 @@ Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiy
 *  **Fonksiyonlar**
 Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon setini içermektedir:
 
-**İşaretçi ve Bellek Yönetimi Fonksiyonları**
+* *  **İşaretçi ve Bellek Yönetimi Fonksiyonları**
 Bu fonksiyonlar, bellekle doğrudan etkileşim kurarak veri depolama ve manipülasyonu için kullanılır.
 
 *   `ft_memset`: Belirli bir bellek bloğunu, belirtilen bir değerle doldurur. Genellikle bir belleği başlatmak veya sıfırlamak için kullanılır.

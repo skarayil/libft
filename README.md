@@ -54,67 +54,67 @@ Bu fonksiyonlar, tek bir karakterin özelliklerini kontrol etmek veya karakterle
 # **Dize İşleme Fonksiyonları**
 Bu fonksiyonlar, dizeler (null ile sonlanan karakter dizileri) üzerinde çeşitli manipülasyonlar yapmak için kullanılır.
 
-**ft_strlen:** Verilen bir dizenin uzunluğunu (null karakter hariç) hesaplar ve döndürür.
+*  `ft_strlen`: Verilen bir dizenin uzunluğunu (null karakter hariç) hesaplar ve döndürür.
 
-**ft_strlcpy:** Bir kaynak dizenin kopyasını güvenli bir şekilde hedef arabelleğe kopyalar ve kopyalanan dizenin toplam uzunluğunu döndürür. Hedef arabelleğin taşmasını engeller.
+*  `ft_strlcpy`: Bir kaynak dizenin kopyasını güvenli bir şekilde hedef arabelleğe kopyalar ve kopyalanan dizenin toplam uzunluğunu döndürür. Hedef arabelleğin taşmasını engeller.
 
-**ft_strlcat:** Bir kaynak dizeni güvenli bir şekilde hedef arabelleğin sonuna ekler (birleştirir) ve oluşan dizenin toplam uzunluğunu döndürür. Hedef arabelleğin taşmasını engeller.
+*  `ft_strlcat`: Bir kaynak dizeni güvenli bir şekilde hedef arabelleğin sonuna ekler (birleştirir) ve oluşan dizenin toplam uzunluğunu döndürür. Hedef arabelleğin taşmasını engeller.
 
-**ft_strchr:** Bir dize içinde, belirtilen bir karakterin ilk geçtiği yeri arar ve o yere bir işaretçi döndürür.
+*  `ft_strchr`: Bir dize içinde, belirtilen bir karakterin ilk geçtiği yeri arar ve o yere bir işaretçi döndürür.
 
-**ft_strrchr:** Bir dize içinde, belirtilen bir karakterin son geçtiği yeri arar ve o yere bir işaretçi döndürür.
+*  `ft_strrchr`: Bir dize içinde, belirtilen bir karakterin son geçtiği yeri arar ve o yere bir işaretçi döndürür.
 
-**ft_strncmp:** İki diziyi, belirtilen maksimum bir uzunluğa kadar veya null karakterle karşılaşana kadar karşılaştırır.
+*  `ft_strncmp`: İki diziyi, belirtilen maksimum bir uzunluğa kadar veya null karakterle karşılaşana kadar karşılaştırır.
 
-**ft_strnstr:** Bir büyük dize içinde, başka bir küçük dizenin ilk geçtiği yeri belirli bir maksimum uzunluğa kadar arar. Eğer bulunursa, bulunduğu yere bir işaretçi döndürür.
+*  `ft_strnstr`: Bir büyük dize içinde, başka bir küçük dizenin ilk geçtiği yeri belirli bir maksimum uzunluğa kadar arar. Eğer bulunursa, bulunduğu yere bir işaretçi döndürür.
 
-**ft_atoi:** Bir dizeyi (string) tam sayıya (integer) dönüştürür. Dizenin başında boşluklar, işaretler (+/-) ve rakamlar olabilir.
+*  `ft_atoi`: Bir dizeyi (string) tam sayıya (integer) dönüştürür. Dizenin başında boşluklar, işaretler (+/-) ve rakamlar olabilir.
 
-**ft_substr:** Verilen bir dizenin belirli bir başlangıç noktasından itibaren, belirtilen uzunlukta bir alt dizesini (substring) oluşturur ve bu yeni alt dizenin işaretçisini döndürür.
+*  `ft_substr`: Verilen bir dizenin belirli bir başlangıç noktasından itibaren, belirtilen uzunlukta bir alt dizesini (substring) oluşturur ve bu yeni alt dizenin işaretçisini döndürür.
 
-**ft_strjoin:** İki diziyi (string) birleştirerek yeni bir dize oluşturur ve bu yeni dizenin işaretçisini döndürür. Yeni bellek alanı tahsis edilir.
+*  `ft_strjoin`: İki diziyi (string) birleştirerek yeni bir dize oluşturur ve bu yeni dizenin işaretçisini döndürür. Yeni bellek alanı tahsis edilir.
 
-**ft_strtrim:** Bir dizenin başından ve sonundan, belirtilen bir karakter kümesinden herhangi bir karakteri temizler ve ortaya çıkan yeni dizenin işaretçisini döndürür.
+*  `ft_strtrim`: Bir dizenin başından ve sonundan, belirtilen bir karakter kümesinden herhangi bir karakteri temizler ve ortaya çıkan yeni dizenin işaretçisini döndürür.
 
-**ft_split:** Bir dizeyi, belirtilen bir ayırıcı karaktere göre bölerek alt dizelerden oluşan bir dize dizisi (array of strings) döndürür. Bölünen her alt dize için ayrı bellek tahsis edilir.
+*  `ft_split`: Bir dizeyi, belirtilen bir ayırıcı karaktere göre bölerek alt dizelerden oluşan bir dize dizisi (array of strings) döndürür. Bölünen her alt dize için ayrı bellek tahsis edilir.
 
-**ft_itoa:** Bir tam sayıyı (integer) temsil eden dizeye (string) dönüştürür ve bu yeni dizenin işaretçisini döndürür. Yeni bellek alanı tahsis edilir.
+*  `ft_itoa`: Bir tam sayıyı (integer) temsil eden dizeye (string) dönüştürür ve bu yeni dizenin işaretçisini döndürür. Yeni bellek alanı tahsis edilir.
 
-**ft_strmapi:** Bir dizenin her karakterine, verilen bir fonksiyonu uygulayarak yeni bir dize oluşturur ve bu yeni dizenin işaretçisini döndürür. Fonksiyon, her karakteri ve indeksini alır.
+*  `ft_strmapi`: Bir dizenin her karakterine, verilen bir fonksiyonu uygulayarak yeni bir dize oluşturur ve bu yeni dizenin işaretçisini döndürür. Fonksiyon, her karakteri ve indeksini alır.
 
-**ft_striteri:** Bir dizenin her karakterine, verilen bir fonksiyonu uygular. Bu fonksiyon, dizeyi yerinde değiştirir ve herhangi bir değer döndürmez.
+*  `ft_striteri`: Bir dizenin her karakterine, verilen bir fonksiyonu uygular. Bu fonksiyon, dizeyi yerinde değiştirir ve herhangi bir değer döndürmez.
 
 # **Standart Girdi/Çıktı Fonksiyonları**
 Bu fonksiyonlar, veriyi belirtilen dosya tanımlayıcılarına (ekran, dosya vb.) yazmak için kullanılır.
 
-**ft_putchar_fd:** Tek bir karakteri, belirtilen dosya tanımlayıcısına yazar.
+*  `ft_putchar_fd`: Tek bir karakteri, belirtilen dosya tanımlayıcısına yazar.
 
-**ft_putstr_fd:** Bir dizeyi, belirtilen dosya tanımlayıcısına yazar.
+*  `ft_putstr_fd`: Bir dizeyi, belirtilen dosya tanımlayıcısına yazar.
 
-**ft_putendl_fd:** Bir dizeyi ve ardından bir yeni satır (\n) karakterini, belirtilen dosya tanımlayıcısına yazar.
+*  `ft_putendl_fd`: Bir dizeyi ve ardından bir yeni satır (\n) karakterini, belirtilen dosya tanımlayıcısına yazar.
 
-**ft_putnbr_fd:** Bir tam sayıyı, belirtilen dosya tanımlayıcısına (dize olarak) yazar.
+*  `ft_putnbr_fd`: Bir tam sayıyı, belirtilen dosya tanımlayıcısına (dize olarak) yazar.
 
 # **Bağlı Liste Fonksiyonları (Bonus Kısım)**
 Bu fonksiyonlar, dinamik veri yapıları olan tek yönlü bağlı listeleri yönetmek için kullanılır.
 
-**ft_lstnew:** Belirtilen içeriğe sahip yeni bir bağlı liste elemanı (node) oluşturur ve bu elemanın işaretçisini döndürür.
+*  `ft_lstnew`: Belirtilen içeriğe sahip yeni bir bağlı liste elemanı (node) oluşturur ve bu elemanın işaretçisini döndürür.
 
-**ft_lstadd_front:** Yeni bir liste elemanını, belirtilen listenin başına ekler.
+*  `ft_lstadd_front`: Yeni bir liste elemanını, belirtilen listenin başına ekler.
 
-**ft_lstsize:** Belirtilen bir bağlı listenin toplam eleman sayısını (boyutunu) hesaplar ve döndürür.
+*  `ft_lstsize`: Belirtilen bir bağlı listenin toplam eleman sayısını (boyutunu) hesaplar ve döndürür.
 
-**ft_lstlast:** Belirtilen bir bağlı listenin son elemanının işaretçisini döndürür.
+*  `ft_lstlast`: Belirtilen bir bağlı listenin son elemanının işaretçisini döndürür.
 
-**ft_lstadd_back:** Yeni bir liste elemanını, belirtilen listenin sonuna ekler.
+*  `ft_lstadd_back`: Yeni bir liste elemanını, belirtilen listenin sonuna ekler.
 
-**ft_lstdelone:** Belirli bir liste elemanını (node) ve içerdiği hafızayı silerek serbest bırakır.
+*  `ft_lstdelone`: Belirli bir liste elemanını (node) ve içerdiği hafızayı silerek serbest bırakır.
 
-**ft_lstclear:** Belirtilen bir bağlı listenin tüm elemanlarını (node'larını) ve bu elemanların içerdiği hafızayı silerek serbest bırakır. Listenin tamamını boşaltır.
+*  `ft_lstclear`: Belirtilen bir bağlı listenin tüm elemanlarını (node'larını) ve bu elemanların içerdiği hafızayı silerek serbest bırakır. Listenin tamamını boşaltır.
 
-**ft_lstiter:** Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular. Bu fonksiyon genellikle elemanların içeriği üzerinde bir işlem yapmak için kullanılır.
+*  `ft_lstiter`: Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular. Bu fonksiyon genellikle elemanların içeriği üzerinde bir işlem yapmak için kullanılır.
 
-**ft_lstmap:** Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular ve bu fonksiyonun döndürdüğü değerlerle yeni bir bağlı liste oluşturur. Yeni liste için bellek tahsis edilir.
+*  `ft_lstmap`: Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular ve bu fonksiyonun döndürdüğü değerlerle yeni bir bağlı liste oluşturur. Yeni liste için bellek tahsis edilir.
 
 ---
 ### Created by Sude Naz Karayıldırım

@@ -146,25 +146,28 @@ int main()
 }
 ```
 
-Test Senaryoları
-String İşlemleri:
-ft_strlen, ft_strcpy, ft_strcat gibi fonksiyonlar ile string manipülasyonları doğrulanır.
+## Test Senaryoları
 
-Bellek Yönetimi:
-malloc ve free fonksiyonları ile bellek yönetimi yapılır ve bellek sızıntıları test edilir.
+*    **String İşlemleri:**
+  ft_strlen, ft_strcpy, ft_strcat gibi fonksiyonlar ile string manipülasyonları doğrulanır.
 
-Bağlı Liste İşlemleri:
-Bağlı liste fonksiyonları (ft_lstnew, ft_lstadd_front, ft_lstsize) test edilir.
+*    **Bellek Yönetimi:**
+  malloc ve free fonksiyonları ile bellek yönetimi yapılır ve bellek sızıntıları test edilir.
 
-Hata Durumları:
-Hatalı bellek erişimleri veya geçersiz verilerle fonksiyonlar test edilerek doğru hata yönetimi sağlanır.
+*    **Bağlı Liste İşlemleri:**
+  Bağlı liste fonksiyonları (ft_lstnew, ft_lstadd_front, ft_lstsize) test edilir.
 
-Notlar
-Libft fonksiyonları, C dilindeki temel string ve bellek işlemleri için yardımcı araçlardır.
+*    **Hata Durumları:**
+  Hatalı bellek erişimleri veya geçersiz verilerle fonksiyonlar test edilerek doğru hata yönetimi sağlanır.
 
-Bağlı Liste Fonksiyonları (Bonus):
-Bonus kısmında, bağlı listelerle ilgili fonksiyonlar (ft_lstnew, ft_lstadd_back vb.) yer almaktadır. Bu fonksiyonlar dinamik veri yapılarının yönetilmesi için kullanılır.
+## Notlar
 
+*    **Libft fonksiyonları:**
+  C dilindeki temel string ve bellek işlemleri için yardımcı araçlardır.
+
+*    **Bağlı Liste Fonksiyonları (Bonus):**
+  bağlı listelerle ilgili fonksiyonlar yer almaktadır. Bu fonksiyonlar dinamik veri yapılarının yönetilmesi için kullanılır.
 
 ---
+
 ### Created by Sude Naz Karayıldırım

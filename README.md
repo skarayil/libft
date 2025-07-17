@@ -13,7 +13,7 @@ Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiy
 *  **Fonksiyonlar:**
 Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon setini içermektedir:
 
-# **İşaretçi ve Bellek Yönetimi Fonksiyonları**
+## **İşaretçi ve Bellek Yönetimi Fonksiyonları**
 **Bu fonksiyonlar, bellekle doğrudan etkileşim kurarak veri depolama ve manipülasyonu için kullanılır.**
 
 *   `ft_memset`: Belirli bir bellek bloğunu, belirtilen bir değerle doldurur. Genellikle bir belleği başlatmak veya sıfırlamak için kullanılır.
@@ -34,7 +34,7 @@ Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon 
 
 *  `ft_strdup`: Verilen bir dizenin (string) tam bir kopyasını oluşturur ve bu yeni kopyanın başlangıcına bir işaretçi döndürür. Yeni bellek alanı malloc ile tahsis edilir.
 
-# **Karakter Kontrol ve Dönüşüm Fonksiyonları**
+## **Karakter Kontrol ve Dönüşüm Fonksiyonları**
 **Bu fonksiyonlar, tek bir karakterin özelliklerini kontrol etmek veya karakterler arasında dönüşüm yapmak için kullanılır.**
 
 *  `ft_isalpha`: Verilen karakterin alfabetik (A-Z veya a-z) olup olmadığını kontrol eder.
@@ -51,7 +51,7 @@ Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon 
 
 *  `ft_tolower`: Verilen karakteri küçük harfe dönüştürür. Eğer zaten küçük harfse veya alfabetik değilse karakteri değiştirmez.
 
-# **Dize İşleme Fonksiyonları**
+## **Dize İşleme Fonksiyonları**
 **Bu fonksiyonlar, dizeler (null ile sonlanan karakter dizileri) üzerinde çeşitli manipülasyonlar yapmak için kullanılır.**
 
 *  `ft_strlen`: Verilen bir dizenin uzunluğunu (null karakter hariç) hesaplar ve döndürür.
@@ -84,7 +84,7 @@ Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon 
 
 *  `ft_striteri`: Bir dizenin her karakterine, verilen bir fonksiyonu uygular. Bu fonksiyon, dizeyi yerinde değiştirir ve herhangi bir değer döndürmez.
 
-# **Standart Girdi/Çıktı Fonksiyonları**
+## **Standart Girdi/Çıktı Fonksiyonları**
 **Bu fonksiyonlar, veriyi belirtilen dosya tanımlayıcılarına (ekran, dosya vb.) yazmak için kullanılır.**
 
 *  `ft_putchar_fd`: Tek bir karakteri, belirtilen dosya tanımlayıcısına yazar.
@@ -95,7 +95,7 @@ Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon 
 
 *  `ft_putnbr_fd`: Bir tam sayıyı, belirtilen dosya tanımlayıcısına (dize olarak) yazar.
 
-# **Bağlı Liste Fonksiyonları (Bonus Kısım)**
+## **Bağlı Liste Fonksiyonları (Bonus Kısım)**
 **Bu fonksiyonlar, dinamik veri yapıları olan tek yönlü bağlı listeleri yönetmek için kullanılır.**
 
 *  `ft_lstnew`: Belirtilen içeriğe sahip yeni bir bağlı liste elemanı (node) oluşturur ve bu elemanın işaretçisini döndürür.
@@ -138,8 +138,10 @@ Libft fonksiyonları, libft.h başlık dosyasından çağrılabilir.
 
 int main()
 {
-    char *str = "Merhaba, Dünya!";
-    ft_putstr(str);  // Yazdırma işlemi
+    t_list *list;
+    list = ft_lstnew("ilk eleman");  // Yeni bir liste elemanı oluşturuluyor
+    ft_lstadd_front(&list, ft_lstnew("önceki eleman"));  // Listenin başına yeni eleman ekleniyor
+    ft_putstr(list->content);  // Listenin ilk elemanının içeriğini yazdırma
     return 0;
 }
 ```

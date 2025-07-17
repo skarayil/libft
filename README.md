@@ -131,7 +131,7 @@ Projeyi derlemek için C derleyicisi (cc) gereklidir.
 
 ## Kullanım
 
-Kitaplık `make` komutu ile derlendikten sonra oluşan `libft.a` dosyasını projenize dahil ederek, `libft.h` başlık dosyasını main fonksiyonuna ekledikten sonra, Libft fonksiyonlarını kullanabilirsiniz.
+Kitaplık `make` komutu ile derledikten sonra oluşan `libft.a` dosyasını projenize bağlayarak, `libft.h` başlık dosyasını main fonksiyonuna ekledikten sonra, Libft fonksiyonlarını kullanabilirsiniz.
 
 ```c
 #include "libft.h"

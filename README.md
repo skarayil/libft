@@ -116,5 +116,53 @@ Libft kütüphanesi, çeşitli kategorilere ayrılmış kapsamlı bir fonksiyon 
 
 *  `ft_lstmap`: Bir bağlı listenin her elemanına, verilen bir fonksiyonu uygular ve bu fonksiyonun döndürdüğü değerlerle yeni bir bağlı liste oluşturur. Yeni liste için bellek tahsis edilir.
 
+
+## Kurulum
+
+Projeyi yerel sisteminize klonlamak için aşağıdaki komutu kullanabilirsiniz:
+
+```bash
+git clone https://github.com/skarayil/libft.git
+```
+
+## Gerekli Bağımlılıklar
+
+Projeyi derlemek için C derleyicisi (cc) gereklidir.
+
+## Kullanım
+
+Libft fonksiyonları, libft.h başlık dosyasından çağrılabilir.
+
+```c
+#include "libft.h"
+
+int main()
+{
+    char *str = "Merhaba, Dünya!";
+    ft_putstr(str);  // Yazdırma işlemi
+    return 0;
+}
+```
+
+Test Senaryoları
+String İşlemleri:
+ft_strlen, ft_strcpy, ft_strcat gibi fonksiyonlar ile string manipülasyonları doğrulanır.
+
+Bellek Yönetimi:
+malloc ve free fonksiyonları ile bellek yönetimi yapılır ve bellek sızıntıları test edilir.
+
+Bağlı Liste İşlemleri:
+Bağlı liste fonksiyonları (ft_lstnew, ft_lstadd_front, ft_lstsize) test edilir.
+
+Hata Durumları:
+Hatalı bellek erişimleri veya geçersiz verilerle fonksiyonlar test edilerek doğru hata yönetimi sağlanır.
+
+Notlar
+Libft fonksiyonları, C dilindeki temel string ve bellek işlemleri için yardımcı araçlardır.
+
+Bağlı Liste Fonksiyonları (Bonus):
+Bonus kısmında, bağlı listelerle ilgili fonksiyonlar (ft_lstnew, ft_lstadd_back vb.) yer almaktadır. Bu fonksiyonlar dinamik veri yapılarının yönetilmesi için kullanılır.
+
+
 ---
 ### Created by Sude Naz Karayıldırım

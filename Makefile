@@ -48,7 +48,6 @@ ft_lstiter.c \
 ft_lstmap.c
 
 OBJS = $(SRCS:.c=.o)
-
 OBJSB = $(SRCSB:.c=.o)
 
 all: $(NAME)
@@ -56,17 +55,17 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@ 
-
 bonus : $(NAME) $(OBJSB)
 	ar rcs $(NAME) $(OBJSB)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
 clean:
 	rm -rf $(OBJS) $(OBJSB)
 
 fclean: clean
-	rm -rf $(NAME) $(bonus)
+	rm -rf $(NAME)
 
 re: fclean all
 

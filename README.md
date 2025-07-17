@@ -1,6 +1,6 @@
 # libft - C Fonksiyonları Kütüphanesi
 
-Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiyonlarımı içeren kişisel bir kütüphane olan Libft'yi oluşturmayı amaçlamaktadır. Bu kütüphane, 42 Okulu'nun öğrenme metodolojisi doğrultusunda, C dilinin temellerini, standart kütüphanelerin iç işleyişini anlamaya ve kendi özgün çözümlerimi geliştirmeye odaklanmıştır.
+**Bu proje, C programlama dilinde sıkça kullanılan fonksiyonların kendi versiyonlarımı içeren kişisel bir kütüphane olan Libft'yi oluşturmayı amaçlamaktadır. Bu kütüphane, 42 Okulu'nun öğrenme metodolojisi doğrultusunda, C dilinin temellerini, standart kütüphanelerin iç işleyişini anlamaya ve kendi özgün çözümlerimi geliştirmeye odaklanmıştır.**
 
 ## Proje Yapısı
 
@@ -131,7 +131,7 @@ Projeyi derlemek için C derleyicisi (cc) gereklidir.
 
 ## Kullanım
 
-Libft fonksiyonları, libft.h başlık dosyasından çağrılabilir.
+Kitaplık `make` komutu ile derlendikten sonra oluşan `libft.a` dosyasını projenize dahil ederek, `libft.h` başlık dosyasını main fonksiyonuna ekledikten sonra, Libft fonksiyonlarını kullanabilirsiniz.
 
 ```c
 #include "libft.h"

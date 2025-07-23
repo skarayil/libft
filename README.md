@@ -141,8 +141,6 @@ libft/
 
 ### 🔗 **Bağlı Liste Fonksiyonları (Bonus)**
 
-<img align="right" alt="Linked List" width="250" src="https://media.giphy.com/media/3o6Zt6KHxJTbXCnSvu/giphy.gif">
-
 *Dinamik veri yapıları olan tek yönlü bağlı listeleri yönetmek için kullanılır.*
 
 #### 📋 **Liste Yapısı:**
